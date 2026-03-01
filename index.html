@@ -1,0 +1,149 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Roll The Tapes</title>
+<meta http-equiv="content-type" content=" text/html;charset=utf-8" />
+<link href="rtt.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://use.typekit.net/omv0pac.css">
+<link rel="icon" type="image/x-icon" href="images/logo.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div id="main_container">
+
+	<div id="header_container">
+		<div id="logo_container">
+			<img src= "images/logo.png">
+		</div>
+		<div id="nav_bar_container">
+		<ul id="nav_bar_list">
+			<li class="youarehere">Home</li>
+			<li><a href="about.html">About us</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="countdown_container">
+		<div id="countdown"></div>
+		<script>
+		var countDownDate = new Date("Mar 25, 2026 16:00:00").getTime();
+
+		var x = setInterval(function() {
+
+		var now = new Date().getTime();
+
+		var distance = countDownDate - now;
+
+		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+		document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+		+ minutes + "m " + seconds + "s ";
+
+		if (distance < 0) {
+			clearInterval(x);
+			document.getElementById("countdown").innerHTML = "Show Time";
+		}
+		}, 1000);
+		</script>
+	</div>
+	
+	<div id="yellow_container">
+	<h1>Roll The Tapes</h1>
+	<div id="description_container">
+		<p>Nottingham Trent third year Media Production students are proud to present our
+		showcase event celebrating the culmination of three years of creative development, collaboration and professional practice.<br>
+		Our game show style nights aims to encourage interaction and light-hearted competitiveness, whilst showing you all our work.<br>
+		At the centre of the evening our live gameshow segment will start, hosted by two members of the cohort (trust me, you will not be disappointed). 
+		Audience members will be invited to participate in media-themed challenges, including “What Happens Next?”, where viewers watch a short clip and
+		predict how the narrative unfolds. <br>
+		Alongside the live entertainment, a curated static exhibition will showcase a range of final-year projects, including short films, 
+		documentaries, branded content, photography, and graphic design work. This space allows visitors to explore 
+		our creative processes and professional portfolios in more depth.<br>
+		This showcase represents more than the end of our degree — it marks our transition into the media industry. We warmly invite professors,
+		students, prospective applicants, friends and family to join us in celebrating the creativity, innovation and ambition of our final-year cohort.</p>
+	</div>
+	</div>
+	
+	<div id="bottom_container">
+	<h2>Timeline:</h2>
+	<div id="body_container">
+		<div id="text_container">
+			<p>16:00- Doors open <br>
+			17:30- Gameshow Starts<br>
+			19:00- Event finishes<br>
+			There will be refreshments available throughout and films in the main lecture theatre from 16:00.</p>
+		</div>
+		<div class="slideshow-container">
+			<div class="bts">
+				<img src="images/bts_1.jpeg">
+			</div>
+			<div class="bts">
+				<img src="images/bts_2.jpeg">
+			</div>
+			<div class="bts">
+				<img src="images/bts_3.jpeg">
+			</div>
+			<div class="bts">
+				<img src="images/bts_4.jpg">
+			</div>
+			<div class="bts">
+				<img src="images/bts_5.jpeg">
+			</div>
+			<div class="bts">
+				<img src="images/bts_6.jpeg">
+			</div>
+			<div class="bts">
+				<img src="images/bts_7.jpeg">
+			</div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+	</div>
+	<script>
+	let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("bts");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+</script>
+
+	
+	</div>
+	
+	<div id="footer_container">
+	<div id="links_container">
+		<h3>
+		<a href="https://www.instagram.com/rollthetapess">@rollthetapess</a>
+		<a href="https://www.tiktok.com/@roll.the.tapes26">@roll.the.tapes26</a>
+		<a href="https://www.eventbrite.com/e/roll-the-tapes-tickets-1983762526117?aff=oddtdtcreator"> Buy Tickets here</a>
+		</h3>
+	</div>
+	</div>
+
+</div>
+
+</body>
+</html>
