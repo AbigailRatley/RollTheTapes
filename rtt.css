@@ -13,16 +13,16 @@ html{
 	height:auto;
 }
 
-/*------------------------header---------------------*/
+/*------------------------header------------------*/
 #header_container{
     width:100%;
-    padding:20px 40px; 
+
     background-color:#58a67a;
     overflow:hidden;
 }
 
 #logo_container img{
-    max-height:150px;
+    max-height:180px;
     width:auto;
     float:left;
 }
@@ -71,6 +71,7 @@ li.youarehere{
 	background-color:#ffffff;
 	font-size:12vw;
 	text-align:center;
+	font-weight:bold;
 
 }
 
