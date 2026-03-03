@@ -281,15 +281,6 @@ p{
 	font-weight:normal;
 }
 
-
-/*--adaptive for phone--*/
-@media (max-width: 768px) {
-	html{
-		font-size:12px;
-	}
-}
-
-
 /*-----------About us Page-----------------*/
 #left_container{
 	width:21%;
@@ -375,4 +366,101 @@ p{
   width: 100%;
   height: auto;
   display: block;
+}
+
+/*--adaptive for phone--*/
+@media (max-width: 768px) {
+
+    html{
+        font-size:1px;
+    }
+
+
+    #logo_container img{
+        float:none;
+        display:block;
+        margin:0 auto 1rem auto;
+        max-height:100px;
+    }
+
+    #nav_bar_container{
+        float:none;
+        width:100%;
+        padding:1rem 0;
+        text-align:center;
+    }
+
+    #nav_bar_list li{
+        display:block;
+        margin:0.5rem 0;
+        font-size:1.4rem;
+    }
+
+    #countdown_container{
+        font-size:10vw;
+        padding:3rem 1rem;
+    }
+
+    #description_container{
+        column-count:1;
+        margin:1.5rem;
+    }
+
+    p{
+        font-size:1.2rem;
+        line-height:1.8rem;
+    }
+
+    h1{
+        font-size:clamp(2.5rem, 8vw, 4rem);
+    }
+
+    h2{
+        font-size:2.5rem;
+        margin:1rem 0;
+    }
+
+    #left_container,
+    #middle_1_container,
+    #middle_2_container,
+    #right_container{
+        float:none;
+        width:100%;
+        margin:1.5rem 0;
+    }
+
+    #text_container,
+    .slideshow-container{
+        float:none;
+        width:100%;
+        margin:1.5rem 0;
+    }
+
+    .slideshow-container{
+        max-width:100%;
+        aspect-ratio:auto;
+    }
+
+    .prev,
+    .next{
+        font-size:3rem;
+        padding:0.5rem;
+    }
+
+    #profile_pic,
+    #person_description{
+        float:none;
+        width:100%;
+        margin:1.5rem 0;
+    }
+
+    .work{
+        width:100%;
+    }
+
+    .social-links{
+        flex-direction:column;
+        gap:1.5rem;
+    }
+
 }
