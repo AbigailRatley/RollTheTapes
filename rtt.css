@@ -31,6 +31,7 @@ html{
 	float:right;
 	width:30%;
 	padding-top:4rem;
+	padding-right:2rem;
 
 }
 #nav_bar_list {
@@ -71,7 +72,7 @@ li.youarehere{
 /*------------------------body----------------------*/
 #countdown_container{	
 	width:100%;
-	padding:60px 20px;
+	padding:4rem 1rem;
 	background-color:#F6EACE;
 	font-size:12vw;
 	text-align:center;
@@ -83,7 +84,7 @@ li.youarehere{
 /*---yellow bit---*/
 #yellow_container{
 	width:100%;
-	padding:80px 20px;
+	padding:4rem 1rem;
 	background-color:#ffd108;
 	overflow: hidden;
 }
@@ -119,7 +120,7 @@ li.youarehere{
 /*---lower third---*/
 #bottom_container{	
 	width:100%;
-	padding:50px 20px;
+	padding:3rem 1rem;
 	background-color:#F6EACE;
 }
 
@@ -195,7 +196,7 @@ li.youarehere{
 /*--------------------footer--------------------*/
 #footer_container{
 	width:100%;
-	padding:80px 20px;
+	padding:4rem 1rem;
 	background-color:#E57C34;
 }
 
@@ -206,7 +207,7 @@ li.youarehere{
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 5rem; 
+    gap: 3rem; 
 }
 
 .social-link {
