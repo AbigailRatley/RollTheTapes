@@ -72,7 +72,7 @@ li.youarehere{
 /*------------------------body----------------------*/
 #countdown_container{	
 	width:100%;
-	padding:4rem 0;
+	padding:4rem 1rem;
 	background-color:#F6EACE;
 	font-size:12vw;
 	text-align:center;
@@ -375,12 +375,15 @@ p{
 	width:50%;
 	padding-top:4rem;
 	padding-right:2rem;
-	}
+	margin-left:0;
+	padding-left:0;
+ }
 
 	#description_container{
     column-count:1;
     margin:2rem auto;
     }
+	
 	h1{
 	color:#B21F58;
 	font-size:5rem;
@@ -407,6 +410,7 @@ p{
 	text-transform:uppercase;
 	font-style:italic;
 	margin:0;
+	text-align:center;
 	}
 
 	p{
@@ -451,9 +455,12 @@ p{
         padding:0.5rem;
     }
 	#person_description{
-        font-size:0.8rem;
-        line-height:1.6;
+        font-size:0.85rem;
+        line-height:1.5rem;
         text-align:left;
+		width:95%;
+		height:auto;
+		margin:2%;
     }
 	
 	#profile_pic{
