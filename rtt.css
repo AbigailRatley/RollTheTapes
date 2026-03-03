@@ -368,3 +368,94 @@ p{
   display: block;
 }
 
+@media (max-width: 768px) {
+	
+	#description_container{
+        column-count:1;
+        margin:2rem auto;
+    }
+	h1{
+	color:#B21F58;
+	font-size:5rem;
+	text-align:center;
+	text-transform:uppercase;
+	font-style:italic;
+	}
+
+	h2{
+	color:#B21F58;
+	font-size:3rem;
+	text-transform:uppercase;
+	font-style:italic;
+	margin:2rem;
+	}
+
+	h3{
+	font-size:2rem;
+	}
+
+	h4{
+	color:#B21F58;
+	font-size:3rem;
+	text-transform:uppercase;
+	font-style:italic;
+	margin:0;
+	}
+
+	p{
+	font-size:1rem;
+	text-align:left;
+	font-weight:normal;
+	}
+	#left_container,
+    #middle_1_container,
+    #middle_2_container,
+    #right_container{
+        float:none;
+        width:100%;
+        margin:2rem 0;
+        text-align:center;
+    }
+
+    .image_container{
+        max-width:300px;
+        margin:0 auto;
+    }
+	
+	#text_container{
+        float:none;
+        width:100%;
+        margin:2rem auto;
+        text-align:center;
+        font-size:1.5rem;
+		box-sizing: border-box;
+    }
+    .slideshow-container{
+        float:none;
+        width:100%;
+        margin:2rem auto;
+		aspect-ratio: 16/9;
+		overflow: hidden;
+		position:relative;
+    }
+    .prev,
+    .next{
+        font-size:2rem;
+        padding:0.5rem;
+    }
+	#person_description{
+        font-size:0.8rem;
+        line-height:1.6;
+        text-align:left;
+    }
+	.work{
+        width:100%;
+        max-width:600px;
+        margin:2rem auto;
+    }
+	    .social-links{
+        flex-direction:column;
+        gap:1.5rem;
+    }
+
+}
