@@ -72,7 +72,7 @@ li.youarehere{
 /*------------------------body----------------------*/
 #countdown_container{	
 	width:100%;
-	padding:4rem 1rem;
+	padding:4rem 0;
 	background-color:#F6EACE;
 	font-size:12vw;
 	text-align:center;
@@ -272,7 +272,8 @@ h4{
 	font-size:4rem;
 	text-transform:uppercase;
 	font-style:italic;
-	margin:0;
+	margin-bottom:2rem;
+	text-align:center;
 }
 
 p{
@@ -345,7 +346,7 @@ p{
 }
 
 #person_description{
-	width:60%;
+	width:65%;
 	height:auto;
 	float:left;
 	margin:2%;
@@ -370,9 +371,11 @@ p{
 
 @media (max-width: 768px) {
 	
-    #nav_bar_container{
-        margin:2rem;
-    }
+	#nav_bar_container{
+	width:50%;
+	padding-top:4rem;
+	padding-right:2rem;
+	}
 
 	#description_container{
     column-count:1;
@@ -452,6 +455,12 @@ p{
         line-height:1.6;
         text-align:left;
     }
+	
+	#profile_pic{
+	width:100%;
+	height:auto;
+	box-sizing: border-box;
+	}
 	.work{
         width:100%;
         max-width:600px;
