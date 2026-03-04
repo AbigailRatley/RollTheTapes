@@ -29,23 +29,22 @@ html{
 /*---nav bar---*/
 #nav_bar_container{
 	float:right;
-	width:30%;
 	padding-top:4rem;
 	padding-right:2rem;
 
 }
 #nav_bar_list {
     list-style: none;
+	display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    flex-wrap: nowrap;
 }
 #nav_bar_list li{
-	margin: 0 2rem; 
-	display:inline;
-	font-size:2rem;
-	line-height:2rem;
-	letter-spacing:1px;
-	text-transform:uppercase;
-	padding:0.5rem;
-	font-weight:bold;
+    font-size:2rem;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    font-weight:bold;
 }
 li.youarehere{
 	color:#B21F58;
@@ -74,7 +73,7 @@ li.youarehere{
 	width:100%;
 	padding:4rem 1rem;
 	background-color:#F6EACE;
-	font-size:12vw;
+	font-size:9rem;
 	text-align:center;
 	font-weight:bold;
 	overflow: hidden;
@@ -228,6 +227,7 @@ li.youarehere{
 }
 
 .social-link:active {
+	text-decoration:underline;
     color: #F2DB66;
 }
 .social-link a:link{
@@ -238,13 +238,7 @@ li.youarehere{
 	color:#000000;
 	text-decoration:none;
 }
-.social-link a:hover{
-	text-decoration:underline;
-}
-.social-link a:active{
-	text-decoration:underline;
-	color:#F2DB66;
-}
+
 
 /*--------------------text spec---------------------*/
 h1{
@@ -269,7 +263,7 @@ h3{
 
 h4{
 	color:#B21F58;
-	font-size:4rem;
+	font-size:6rem;
 	text-transform:uppercase;
 	font-style:italic;
 	margin-bottom:2rem;
@@ -281,6 +275,14 @@ p{
 	text-align:left;
 	font-weight:normal;
 }
+
+h6{
+	font-size:1.5rem;
+	text-align:left;
+	font-weight:normal;
+	margin:1rem 0;
+}
+
 
 /*-----------About us Page-----------------*/
 #left_container{
@@ -338,6 +340,34 @@ p{
 }
 
 
+.name_link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+	font-size:3rem;
+	text-transform:uppercase;
+	font-style:italic;
+	margin:1rem;
+	font-weight:bold;
+	color:#B21F58;
+	text-decoration:none;
+}
+.name_link:hover {
+    text-decoration: underline;
+	color:#B21F58;
+}
+.name_link:active {
+    text-decoration: underline;
+	color:#B21F58;
+}
+.name_link a:link{
+	text-decoration:none;
+}
+.name_link a:visited{
+	text-decoration:none;
+}
+
 /*---personal pages---*/
 #personal_profile{
 	width:100%;
@@ -369,6 +399,67 @@ p{
   display: block;
 }
 
+.breadcrumbs {
+    font-size: 1.5rem;
+    font-weight: normal;
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.breadcrumbs li {
+    display: inline;
+}
+.breadcrumbs li + li::before {
+    content: " > ";
+    padding: 0 5px;
+}
+.breadcrumbs li:last-child {
+    font-weight: bold; 
+}
+.breadcrumbs a:link {
+    color: #000;
+    text-decoration: none;
+}
+.breadcrumbs a:visited {
+    color: #000;
+    text-decoration: none;
+}
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+.breadcrumbs a:active {
+    color:#B21F58;
+    text-decoration: underline;
+}
+
+/* Tablet / half-screen laptops */
+@media (max-width: 1200px) {
+    #countdown_container {
+        font-size: 6rem;
+    }
+    .name_link {
+        font-size: 2.2rem;
+    }
+	#person_description{
+        font-size:0.85rem;
+        line-height:1.5rem;
+        text-align:left;
+		width:95%;
+		height:auto;
+		margin:2%;
+    }
+	
+	#profile_pic{
+	width:100%;
+	height:auto;
+	box-sizing: border-box;
+	}
+}
+
+
+/*-----------phone adaptive----------------*/
 @media (max-width: 768px) {
 	
 	#nav_bar_container{
@@ -381,7 +472,7 @@ p{
 
 	#description_container{
     column-count:1;
-    margin:2rem auto;
+    margin:2rem 2ewm;
     }
 	
 	h1{
