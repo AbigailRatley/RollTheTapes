@@ -463,26 +463,30 @@ h6{
 @media (max-width: 768px) {
 	
 	#nav_bar_container{
-	width:100%;
 	padding-top:4rem;
 	padding-right:1rem;
 	margin-left:0;
 	padding-left:0;
 	}
+
  #countdown_container{	
-	width:100%;
-	padding:4rem 1rem;
 	background-color:#F6EACE;
 	font-size:4rem;
 	text-align:center;
 	font-weight:bold;
 	overflow: hidden;
+	width:95%;
+	height:auto;
+	margin:2%;
 
 	}	
 
 	#description_container{
     column-count:1;
-    margin:2rem 2ewm;
+	overflow: hidden;
+	width:95%;
+	height:auto;
+	margin:2%;
     }
 	
 	h1{
