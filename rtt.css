@@ -276,6 +276,12 @@ p{
 	font-weight:normal;
 }
 
+h5{
+	font-size:1.5rem;
+	text-align:center;
+	font-weight:normal;
+}
+
 h6{
 	font-size:1.5rem;
 	text-align:left;
@@ -389,10 +395,20 @@ h6{
 	box-sizing: border-box;
 }
 .work {
-  width: 50%;
+  width: 75%;
   margin: 0 auto;
 }
-
+.sam video {
+  height:100vh;
+  width:auto;
+  margin: 0 auto;
+  display: block;
+}
+.work video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 .work img {
   width: 100%;
   height: auto;
