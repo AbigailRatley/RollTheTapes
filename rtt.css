@@ -17,28 +17,27 @@ html{
 #header_container{
     width:100%;
     background-color:#7FB78F;
-    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:1rem 2rem;
 }
 
 #logo_container img{
     max-height:180px;
     width:auto;
-    float:left;
+    display:block;
 }
 
 /*---nav bar---*/
 #nav_bar_container{
-	float:right;
-	padding-top:4rem;
-	padding-right:2rem;
-
 }
 #nav_bar_list {
     list-style: none;
 	display: flex;
-    justify-content: flex-end;
-    gap: 2rem;
-    flex-wrap: nowrap;
+    gap:2rem;
+    align-items:center;
+}
 }
 #nav_bar_list li{
     font-size:2rem;
@@ -478,12 +477,13 @@ h6{
 /*-----------phone adaptive----------------*/
 @media (max-width: 768px) {
 	
-	#nav_bar_container{
-	padding-top:2rem;
-	padding-right:1rem;
-	margin-left:0;
-	padding-left:0;
-	}
+	#nav_bar_list li{
+    font-size:1.2rem;
+}
+
+#nav_bar_list{
+    gap:1rem;
+}
 
  #countdown_container{	
 	background-color:#F6EACE;
