@@ -17,27 +17,28 @@ html{
 #header_container{
     width:100%;
     background-color:#7FB78F;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:1rem 2rem;
+    overflow:hidden;
 }
 
 #logo_container img{
     max-height:180px;
     width:auto;
-    display:block;
+    float:left;
 }
 
 /*---nav bar---*/
 #nav_bar_container{
+	float:right;
+	padding-top:4rem;
+	padding-right:2rem;
+
 }
 #nav_bar_list {
     list-style: none;
 	display: flex;
-    gap:2rem;
-    align-items:center;
-}
+    justify-content: flex-end;
+    gap: 2rem;
+    flex-wrap: nowrap;
 }
 #nav_bar_list li{
     font-size:2rem;
@@ -477,65 +478,84 @@ h6{
 /*-----------phone adaptive----------------*/
 @media (max-width: 768px) {
 	
-	#logo_container img{
-		height:80px;
-	}
-	#nav_bar_list li{
-		font-size:1.2rem;
-	}
-	#nav_bar_list{
-		gap:1rem;
+	#nav_bar_container{
+	padding-top:4rem;
+	padding-right:1rem;
+	margin-left:0;
+	padding-left:0;
 	}
 
+	#nav_bar_container{
+	float:right;
+	padding-top:2rem;
+	padding-right:2rem;
+
+	}
+	#nav_bar_list {
+    list-style: none;
+	display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+	}
+	#nav_bar_list li{
+    font-size:2rem;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    font-weight:bold;
+	}
 	#countdown_container{	
-		background-color:#F6EACE;
-		font-size:4rem;
-		text-align:center;
-		font-weight:bold;
-		overflow: hidden;
-		width:95%;
-		height:auto;
-		margin:2%;
+	background-color:#F6EACE;
+	font-size:4rem;
+	text-align:center;
+	font-weight:bold;
+	overflow: hidden;
+	width:95%;
+	height:auto;
+	margin:2%;
+
 	}	
+
 	#description_container{
-		column-count:1;
-		overflow: hidden;
-		width:95%;
-		height:auto;
-		margin:2%;
+    column-count:1;
+	overflow: hidden;
+	width:95%;
+	height:auto;
+	margin:2%;
     }
 	
 	h1{
-		color:#B21F58;
-		font-size:5rem;
-		text-align:center;
-		text-transform:uppercase;
-		font-style:italic;
+	color:#B21F58;
+	font-size:5rem;
+	text-align:center;
+	text-transform:uppercase;
+	font-style:italic;
 	}
+
 	h2{
-		color:#B21F58;
-		font-size:3rem;
-		text-transform:uppercase;
-		font-style:italic;
-		margin:2rem;
+	color:#B21F58;
+	font-size:3rem;
+	text-transform:uppercase;
+	font-style:italic;
+	margin:2rem;
 	}
+
 	h3{
-		font-size:2rem;
+	font-size:2rem;
 	}
+
 	h4{
-		color:#B21F58;
-		font-size:3rem;
-		text-transform:uppercase;
-		font-style:italic;
-		margin:0;
-		text-align:center;
+	color:#B21F58;
+	font-size:3rem;
+	text-transform:uppercase;
+	font-style:italic;
+	margin:0;
+	text-align:center;
 	}
 	p{
-		font-size:1rem;
-		text-align:left;
-		font-weight:normal;
+	font-size:1rem;
+	text-align:left;
+	font-weight:normal;
 	}
-	
 	
 	#left_container,
     #middle_1_container,
@@ -583,9 +603,9 @@ h6{
     }
 	
 	#profile_pic{
-		width:100%;
-		height:auto;
-		box-sizing: border-box;
+	width:100%;
+	height:auto;
+	box-sizing: border-box;
 	}
 	.work{
         width:100%;
