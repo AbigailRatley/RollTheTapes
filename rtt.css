@@ -480,8 +480,8 @@ h6{
 	
 	#nav_bar_container{
         float:right;
-        padding-top:1rem;
-        padding-right:1rem;
+        padding-top:2rem;
+        padding-right:2rem;
     }
 	#nav_bar_list {
 		display:flex;
@@ -501,10 +501,8 @@ h6{
 	text-align:center;
 	font-weight:bold;
 	overflow: hidden;
-	width:95%;
+	width:100%;
 	height:auto;
-	margin:2%;
-
 	}	
 
 	#description_container{
