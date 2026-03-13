@@ -479,23 +479,15 @@ h6{
 @media (max-width: 768px) {
 	
 	#nav_bar_container{
-	padding-top:4rem;
-	padding-right:1rem;
-	margin-left:0;
-	padding-left:0;
-	}
-
-	#nav_bar_container{
-	float:right;
-	padding-top:2rem;
-	padding-right:2rem;
-
-	}
+        float:right;
+        padding-top:1rem;
+        padding-right:1rem;
+    }
 	#nav_bar_list {
-    list-style: none;
-	display: flex;
-    justify-content: flex-end;
-    gap: 2rem;
+		display:flex;
+		flex-direction:column;   
+        align-items:flex-end;    
+        gap:1rem;
 	}
 	#nav_bar_list li{
     font-size:2rem;
