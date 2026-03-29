@@ -451,7 +451,7 @@ h6{
 }
 
 /* Tablet / half-screen laptops */
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
     #countdown_container {
         font-size: 6rem;
     }
@@ -468,8 +468,10 @@ h6{
     }
 	
 	#profile_pic{
-	width:100%;
+	width:75%;
 	height:auto;
+	float: none;
+	margin:0 auto;
 	box-sizing: border-box;
 	}
 }
