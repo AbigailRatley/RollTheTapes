@@ -69,6 +69,10 @@ li.youarehere{
 
 
 /*------------------------body----------------------*/
+#countdown1_container{	
+	width:100vw;
+	padding:0rem;
+}
 #countdown_container{	
 	width:100%;
 	padding:4rem 1rem;
@@ -77,7 +81,16 @@ li.youarehere{
 	text-align:center;
 	font-weight:bold;
 	overflow: hidden;
-
+}
+.video {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+.video video {
+  width: 100vw;
+  height: auto;
+  display: block;
 }
 
 /*---yellow bit---*/
