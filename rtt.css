@@ -256,7 +256,7 @@ li.youarehere{
 /*--------------------text spec---------------------*/
 h1{
 	color:#B21F58;
-	font-size:8rem;
+	font-size:6rem;
 	text-align:center;
 	text-transform:uppercase;
 	font-style:italic;
@@ -276,7 +276,7 @@ h3{
 
 h4{
 	color:#B21F58;
-	font-size:6rem;
+	font-size:4rem;
 	text-transform:uppercase;
 	font-style:italic;
 	margin-bottom:2rem;
