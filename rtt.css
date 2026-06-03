@@ -505,7 +505,7 @@ h6{
         gap:1rem;
 	}
 	#nav_bar_list li{
-    font-size:2rem;
+    font-size:1.5rem;
     letter-spacing:1px;
     text-transform:uppercase;
     font-weight:bold;
@@ -530,7 +530,7 @@ h6{
 	
 	h1{
 	color:#B21F58;
-	font-size:5rem;
+	font-size:3rem;
 	text-align:center;
 	text-transform:uppercase;
 	font-style:italic;
@@ -538,19 +538,19 @@ h6{
 
 	h2{
 	color:#B21F58;
-	font-size:3rem;
+	font-size:2rem;
 	text-transform:uppercase;
 	font-style:italic;
-	margin:2rem;
+	margin:1rem;
 	}
 
 	h3{
-	font-size:2rem;
+	font-size:1.5rem;
 	}
 
 	h4{
 	color:#B21F58;
-	font-size:3rem;
+	font-size:2rem;
 	text-transform:uppercase;
 	font-style:italic;
 	margin:0;
@@ -568,7 +568,7 @@ h6{
     #right_container{
         float:none;
         width:100%;
-        margin:2rem 0;
+        margin:1rem 0;
         text-align:center;
     }
 
@@ -580,7 +580,7 @@ h6{
 	#text_container{
         float:none;
         width:100%;
-        margin:2rem auto;
+        margin:1rem auto;
         text-align:center;
         font-size:1.5rem;
 		box-sizing: border-box;
@@ -588,7 +588,7 @@ h6{
     .slideshow-container{
         float:none;
         width:100%;
-        margin:2rem auto;
+        margin:1rem auto;
 		aspect-ratio: 16/9;
 		overflow: hidden;
 		position:relative;
